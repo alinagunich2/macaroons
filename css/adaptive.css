@@ -1,0 +1,141 @@
+@media screen and (max-width: 1104px){
+    .macaroons__items {
+        grid-template-columns: repeat(2, fit-content(263px));
+       justify-content: center;
+       gap: 136px 39.33px
+    }
+}
+@media screen and (max-width: 996px){
+    .menu {
+        margin-left: 100px;
+    }
+    .main{ 
+        padding: 71px 0 103px 0;
+    }
+    .advantages__items {
+        display: grid;
+        grid-template-columns: repeat(2, fit-content(230px));
+        gap: 122px 65px;
+        justify-content: center;
+    }
+    .advantage__number {
+        justify-self: center;
+        padding: 0;
+    }
+    .advantage__number::before {
+        left: -19px;
+    }
+    .advantage__title {
+        text-align: center;}
+    .advantage__text {
+        text-align: center;
+    }
+    .order__content {
+        margin-left: 15px;
+    }
+}
+@media screen and (min-width: 769px){
+    .main__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .main__content{
+        flex: 0 0 58%;
+        margin-right: 15px;
+    }
+    .main__img-image {
+        width: 100%;
+    }
+    .main__img::before,
+    .main__img::after {
+        width: 50%;
+        height: 60%;
+    }
+    .description__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main{ 
+        padding: 65px 0 43px 0;
+    }
+    .header__container .phone{
+        display: none;
+    }
+    .main__title {
+        margin-bottom: 75px;
+    }
+    .main__text {
+        margin-bottom: 49px;
+    }
+    .main__img{
+        margin-top: -87px;
+        
+    }
+
+    .description {
+        text-align: center;
+    }
+    .description__title {
+        margin: 0 auto;
+        margin-bottom: 65px;
+    }
+    .description__text {
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .order {
+        padding: 118px 0 20px 0;
+        
+    }
+    .order__body {
+        
+    }
+    .order__img {
+        order: 2;
+    }
+    .order__content {
+        order: 1;
+        padding-bottom: 127px;
+    }
+    .order__img{
+        position: relative;
+    }
+    .order__decoration_srrawberry-1 {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: -35px;
+        z-index: 3;
+        animation: top-bottom 3s infinite;
+    }
+    .order__decoration_srrawberry-2 {
+        position: absolute;
+        content: "";
+        right: 96px;
+        top: -200px;
+        z-index: 3;
+        animation: top-bottom 3.2s infinite;
+    }
+}
+@media screen and (max-width: 640px){
+    .main__img{
+        margin-top: -42px;
+    }
+}
+@media screen and (max-width: 579px){
+    .main__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .main__img{
+        margin-top: 37px;
+    }
+    
+}
