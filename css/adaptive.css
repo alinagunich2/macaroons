@@ -13,7 +13,6 @@
         padding: 71px 0 103px 0;
     }
     .advantages__items {
-        display: grid;
         grid-template-columns: repeat(2, fit-content(230px));
         gap: 122px 65px;
         justify-content: center;
@@ -137,5 +136,110 @@
     .main__img{
         margin-top: 37px;
     }
-    
+    .macaroons__items {
+        grid-template-columns: repeat(1, fit-content(263px));
+       justify-content: center;
+       gap: 136px 39.33px
+    }
+}
+
+@media screen and (max-width: 468px){
+    .main__title {
+        font-size: 32px;
+        margin-bottom: 46px;
+}
+.main__text {
+        font-size: 16px;
+        margin-bottom: 40px;
+}
+.description{
+    padding-top: 100px;
+}
+.description__title {
+        font-size: 30px;
+        margin-bottom: 45px;
+}
+.description__text {
+        font-size: 16px;
+        margin-bottom: 61px;
+}
+.advantages {
+    padding: 63px 0 91px 0;
+}
+
+   .advantages__items {
+        grid-template-columns: repeat(2, 165px);
+        gap: 75px 15px;
+        justify-content: center;
+    }
+    .advantage__title {
+        font-size: 18px;
+}
+.advantage__text {
+        font-size: 13px;
+}
+.macaroons {
+    padding: 100px 0 100px 0;
+}
+.macaroons__title {
+        font-size: 30px;
+        margin-bottom: 125px;
+}
+.order {
+    padding: 97px 0 79px 0;
+}
+.order__title {
+        font-size: 30px;
+}
+.order__text {
+        font-size: 16px;
+}
+.order__body {
+    display: block;
+}
+.order__img-image{
+    display: none;
+}
+.order__decoration_srrawberry-2{
+    display: none;
+}
+.order__base-input, 
+.order__btn{
+    width: 100%;
+}
+
+.order__decoration_srrawberry-1 {
+    left: 219px;
+    top: 117px;
+}
+.footer{
+    padding: 47px 0 26px 0;
+}
+.footer__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 53px 53px 53px 53px 37px
+}
+.footer__container > *{
+    justify-self: center;
+    align-self: self-start;
+}
+.footer__container .logo{
+order: 1 ;
+}
+.footer__insta{
+    order: 3;
+}
+.footer__container .phone{
+    order: 2 ;
+}
+.footer__rights{
+    order: 5;
+}
+.footer_text-insta{
+    order: 4 ;
+}
+.present{
+    display: none;
+}
 }

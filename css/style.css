@@ -24,7 +24,9 @@
     margin: 0;
     border: 0;
 }
-
+*{
+    box-sizing: border-box;
+}
 
 :focus, :active{outline: none;}
 a:focus, :active{outline: none;}
@@ -517,8 +519,8 @@ grid-row: 1/3;
 /*--present-----------------------------------------------------------*/
 .present {
 position: fixed;
-bottom: 15px;
-right: 30px;
+bottom: 1px;
+right: 20px;
 z-index: 10;
 }
 .present__content{
