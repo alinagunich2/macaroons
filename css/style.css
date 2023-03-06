@@ -72,8 +72,10 @@ body{
     padding: 37px 0 25px 0;
 }
 .header__container {
-    display: grid;
-    grid-template-columns: 114px 1fr 153px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .logo {
@@ -109,6 +111,8 @@ body{
         font-size: 16px;
         font-family: GilroyBold;
         color: rgb(255, 255, 255);
+        flex: 1 1 30%;
+        text-align: end;
 }
 
 
@@ -590,4 +594,11 @@ z-index: 10;
 }
 .present__img-image {
     
+}
+
+.burger{
+    display: none;
+    }
+.close{
+    display: none;
 }
