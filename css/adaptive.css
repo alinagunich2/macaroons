@@ -10,7 +10,7 @@
         margin-left: 100px;
     }
     .main{ 
-        padding: 71px 0 103px 0;
+        padding: 86px 0 103px 0;
     }
     .advantages__items {
         grid-template-columns: repeat(2, fit-content(230px));
@@ -60,7 +60,7 @@
 
 @media screen and (max-width: 768px){
     .main{ 
-        padding: 65px 0 43px 0;
+        padding: 102px 0 43px 0;
     }
     .header__container .phone{
         display: none;
@@ -144,6 +144,7 @@
        justify-content: center;
        gap: 136px 39.33px
     }
+    
 }
 
 @media screen and (max-width: 468px){
@@ -188,8 +189,12 @@
         font-size: 30px;
         margin-bottom: 125px;
 }
+.order__content{
+    padding-bottom: 0;
+}
 .order {
     padding: 97px 0 79px 0;
+    overflow: hidden;
 }
 .order__title {
         font-size: 30px;
@@ -258,7 +263,7 @@ order: 1 ;
 }
 .burger {
     position: relative;
-    width: 38px;
+    width: 40px;
     height: 22px;
     flex-shrink: 0;
     cursor: pointer;
@@ -291,6 +296,7 @@ order: 1 ;
     top: 0;
     left: 0;
     background: #000000c9;
+    z-index: 100;
 }
 .menu__items{
     flex-direction: column;
@@ -301,6 +307,14 @@ order: 1 ;
 .menu-item{
     padding: 15px 0;
 }
+.menu__link{
+    font-size: 35px;
+    color: #ffefef;
+}
+.menu__link:hover{
+    border-bottom: 2px solid #ffefef;
+
+}
 .menu.open{
     display: flex;
     align-items: center;
@@ -309,10 +323,11 @@ order: 1 ;
     display: block;
     width: 24px;
     height: 24px;
-    fill: #821328;
+    fill: #ffefef;
     position: absolute;
     top: 20px;
     left: 20px;
     cursor: pointer;
 }
+
 }

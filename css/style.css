@@ -23,10 +23,10 @@
     padding: 0;
     margin: 0;
     border: 0;
-}
-*{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
 
 :focus, :active{outline: none;}
 a:focus, :active{outline: none;}
@@ -70,6 +70,10 @@ body{
 
 .header {
     padding: 37px 0 25px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    background-color: #eba8b1;
 }
 .header__container {
     display: flex;
@@ -119,6 +123,7 @@ body{
 /*--main-----------------------------------------------------------*/
 .main{ 
     padding: 124px 0 103px 0;
+    overflow: hidden;
 }
 
 .main__title {
@@ -232,7 +237,6 @@ z-index: -1;
 }
 .description__img-image {
     width: 100%;
-    max-width: 302px;
 }
 
 
@@ -251,18 +255,19 @@ z-index: -1;
     grid-template-columns: 1fr 1fr 1fr 220px;
     grid-template-rows: 1fr;
 }
-.advantage:hover .advantage__number{
-        color: rgb(130, 19, 40);
-}
-.advantage:hover .advantage__number::before{
-    background-color: #eba8b1;
-}
+
 .advantage {
     max-width: 220px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 45px 40px auto;
     cursor: pointer;
+}
+.advantage:hover .advantage__number{
+    color: rgb(130, 19, 40);
+}
+.advantage:hover .advantage__number::before{
+background-color: #eba8b1;
 }
 .advantage__number {
         font-size: 60px;
@@ -274,6 +279,7 @@ z-index: -1;
         padding-left: 20px;
         position: relative;
         z-index: 2;
+        transition: all .5s ease;
 }
 .advantage__number::before {
     content: "";
@@ -285,6 +291,7 @@ z-index: -1;
     z-index: -1;
     bottom: 10px;
     left: 0;
+    transition: all .5s ease;
 }
 .advantage__title {
         font-size: 20px;
@@ -378,6 +385,7 @@ grid-row: 1/3;
 .order {
     padding: 97px 0 120px 0;
     background: #ffefef;
+  
 }
 
 .order__body {
@@ -390,9 +398,11 @@ grid-row: 1/3;
 }
 
 .order__img {
+   
 }
 .order__img-image {
-    max-width: 352px;
+    overflow: hidden;
+    width: 100%;
 }
 .order__content {
     max-width: 408px;
@@ -523,8 +533,8 @@ grid-row: 1/3;
 /*--present-----------------------------------------------------------*/
 .present {
 position: fixed;
-bottom: 1px;
-right: 20px;
+bottom: 30px;
+right: 30px;
 z-index: 10;
 }
 .present__content{
